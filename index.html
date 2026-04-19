@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FunnyBlock - Тот самый Хардкор</title>
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #ff4444; /* Красная рамка под Хардкор */
+            box-shadow: 0 0 20px rgba(255, 68, 68, 0.3);
+        }
+        h1 { color: #ff4444; font-size: 3em; margin-bottom: 10px; }
+        p { font-size: 1.2em; color: #cccccc; }
+        .ip-box {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1.5em;
+            margin: 20px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .ip-box:hover { background: #444; color: #ff4444; }
+        .features { color: #888; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FUNNYBLOCK</h1>
+        <p>Настоящий Hardcore на версии 1.21</p>
+        
+        <div class="ip-box" onclick="copyIP()">funnyblock.fun</div>
+        
+        <div class="features">
+            Кровавая луна • Аирдропы • Кастомные чары • Магнит и Бульдозер
+        </div>
+    </div>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("funnyblock.fun");
+            alert("IP скопирован! Ждем тебя в игре.");
+        }
+    </script>
+</body>
+</html>
