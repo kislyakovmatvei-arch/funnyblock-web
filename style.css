@@ -1,103 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #0b0c10;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-}
-
-/* Стеклянная шапка сайта */
-.navbar {
+/* Секция регистрации */
+.registration-section {
+    padding: 100px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 10%;
-    background: rgba(11, 12, 16, 0.8);
-    backdrop-filter: blur(15px);
-    position: fixed;
+    background-color: #0b0c10;
+}
+
+.form-container {
+    background: rgba(31, 40, 51, 0.5);
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
     width: 100%;
-    top: 0;
-    box-sizing: border-box;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+    max-width: 500px;
+    backdrop-filter: blur(10px);
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 3px;
+.form-container h2 {
     color: #66fcf1;
-    text-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
-.nav-links a {
+.form-container p {
     color: #c5c6c7;
-    text-decoration: none;
-    margin-left: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 14px;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.neon-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: rgba(11, 12, 16, 0.8);
+    border: 1px solid #45a29e;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
     transition: 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #66fcf1;
-    text-shadow: 0 0 10px #66fcf1;
-}
-
-/* Главный экран */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: radial-gradient(circle at center, #1f2833 0%, #0b0c10 100%);
-    padding: 0 20px;
-}
-
-.hero h1 {
-    font-size: 5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 0;
-    background: linear-gradient(90deg, #ffffff, #66fcf1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-    color: #c5c6c7;
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin-top: 20px;
-    line-height: 1.6;
-}
-
-/* Неоновая кнопка */
-.glow-btn {
-    margin-top: 40px;
-    padding: 15px 40px;
-    background: transparent;
-    border: 2px solid #66fcf1;
-    color: #66fcf1;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.glow-btn:hover {
-    background: #66fcf1;
-    color: #0b0c10;
-    box-shadow: 0 0 25px rgba(102, 252, 241, 0.6);
-    transform: translateY(-3px);
+.neon-input:focus {
+    outline: none;
+    border-color: #66fcf1;
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.3);
 }
