@@ -2,229 +2,26 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXUS | Next Generation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: #050505;
-            color: #ffffff;
-            overflow-x: hidden;
-        }
-
-        /* Фоновые неоновые круги */
-        .bg-glow {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(112, 0, 255, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
-            top: -200px;
-            left: -200px;
-            z-index: -1;
-            border-radius: 50%;
-        }
-
-        .bg-glow-right {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
-            bottom: -100px;
-            right: -100px;
-            z-index: -1;
-            border-radius: 50%;
-        }
-
-        /* Навигация */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 10%;
-            background: rgba(5, 5, 5, 0.8);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .nav-links a {
-            color: #a0a0a0;
-            text-decoration: none;
-            margin-left: 30px;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #ffffff;
-        }
-
-        /* Главный экран */
-        .hero {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 5rem;
-            font-weight: 900;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            animation: fadeInUp 1s ease forwards;
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #ff00cc, #3333ff, #00d2ff);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientMove 3s linear infinite;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #888;
-            max-width: 600px;
-            margin-bottom: 40px;
-            animation: fadeInUp 1.2s ease forwards;
-            opacity: 0;
-        }
-
-        /* Кнопки */
-        .btn {
-            padding: 15px 40px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-        }
-
-        .btn-primary {
-            background: linear-gradient(90deg, #7000ff, #00d4ff);
-            color: white;
-            box-shadow: 0 0 20px rgba(112, 0, 255, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
-        }
-
-        /* Секция с карточками (Glassmorphism) */
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 50px 10%;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 40px;
-            width: 300px;
-            transition: transform 0.4s ease, border-color 0.4s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(255, 255, 255, 0.2);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #fff;
-        }
-
-        .card p {
-            color: #888;
-            line-height: 1.6;
-        }
-
-        /* Анимации */
-        @keyframes gradientMove {
-            0% { background-position: 0% center; }
-            100% { background-position: 200% center; }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>FUNNYBLOCK | HOME</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="bg-glow"></div>
-    <div class="bg-glow-right"></div>
-
     <nav>
-        <div class="logo">NEXUS</div>
-        <div class="nav-links">
-            <a href="#">Продукты</a>
-            <a href="#">Технологии</a>
-            <a href="#">Контакты</a>
+        <div style="font-size: 1.5rem; font-weight: 900;">FB.SYSTEM</div>
+        <div>
+            <a href="index.html">Главная</a>
+            <a href="projects.html">Проекты</a>
         </div>
     </nav>
 
-    <section class="hero">
-        <h1>Создаем <span class="gradient-text">Будущее</span> <br> Прямо Сейчас</h1>
-        <p>Идеальная архитектура, невероятная скорость и абсолютная безопасность. Перейди на новый уровень цифрового опыта.</p>
-        <a href="#" class="btn btn-primary">Начать работу</a>
-    </section>
+    <div class="container">
+        <h1>MAIN_PAGE</h1>
+        <p>Добро пожаловать в систему управления проектами. Мы создаем цифровые решения в черно-белом спектре. Никакой лишней информации, только чистый код и функционал.</p>
+        <a href="projects.html" class="btn">Посмотреть проекты</a>
+    </div>
 
-    <section class="features">
-        <div class="card">
-            <h3>Максимальная Скорость</h3>
-            <p>Оптимизированный код и молниеносный отклик серверов по всему миру.</p>
-        </div>
-        <div class="card">
-            <h3>Абсолютная Защита</h3>
-            <p>Системы шифрования последнего поколения для сохранности ваших данных.</p>
-        </div>
-        <div class="card">
-            <h3>Современный Дизайн</h3>
-            <p>Плавные анимации и интерфейс, который понимает пользователя с полуслова.</p>
-        </div>
-    </section>
-
+    <footer>
+        © 2026 FB.SYSTEM // NO_COLORS_ALLOWED
+    </footer>
 </body>
 </html>
