@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECLIPSE | Каталог</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили только для этой страницы */
+        .catalog-container {
+            padding: 150px 10% 50px;
+            min-height: 100vh;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+
+        .grid {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(31, 40, 51, 0.5);
+            border: 1px solid rgba(102, 252, 241, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            width: 320px;
+            transition: all 0.4s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #66fcf1;
+            box-shadow: 0 10px 30px rgba(102, 252, 241, 0.15);
+            background: rgba(31, 40, 51, 0.8);
+        }
+
+        .card h2 {
+            color: #66fcf1;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #c5c6c7;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ECLIPSE</div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+        </div>
+    </nav>
+
+    <div class="catalog-container">
+        <h1 class="section-title">ДОСТУПНЫЕ МОДУЛИ</h1>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Модуль Альфа</h2>
+                <p>Высокопроизводительное ядро с поддержкой мультипоточности и защитой от DDoS-атак.</p>
+            </div>
+            
+            <div class="card">
+                <h2>Модуль Бета</h2>
+                <p>Облачная база данных с моментальным откликом и резервным копированием.</p>
+            </div>
+            
+            <div class="card">
+                <h2>Модуль Гамма</h2>
+                <p>Нейросетевой интерфейс для автоматизации процессов и анализа трафика.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
