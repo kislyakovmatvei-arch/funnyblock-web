@@ -1,13 +1,43 @@
-<section class="registration-section">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECLIPSE | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ECLIPSE</div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>NEXT GEN</h1>
+        <p>Архитектура будущего. Бескомпромиссная производительность и идеальный дизайн в каждом пикселе.</p>
+        <a href="#register" class="glow-btn">Открыть систему</a>
+    </section>
+
+    <section class="registration-section" id="register">
         <div class="form-container">
             <h2>ПРИСОЕДИНИТЬСЯ К СИСТЕМЕ</h2>
             <p>Оставь свой Email, чтобы получить ранний доступ и новости проекта.</p>
+            
             <form action="https://formsubmit.co/kislyakovmatvei@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://www.funnyblock.fun">
+                
                 <input type="text" name="Имя_игрока" placeholder="Твой никнейм" required class="neon-input">
                 <input type="email" name="Email" placeholder="Твой Email" required class="neon-input">
+                
                 <button type="submit" class="glow-btn">Зарегистрироваться</button>
             </form>
         </div>
     </section>
+
+</body>
+</html>
