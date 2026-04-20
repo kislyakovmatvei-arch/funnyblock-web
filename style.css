@@ -1,80 +1,103 @@
-/* Основные настройки */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
 body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: 'Courier New', Courier, monospace; /* "Хакерский" печатный шрифт */
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #0b0c10;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
-/* Навигация */
-nav {
-    border-bottom: 2px solid #000000;
-    padding: 20px 10%;
+/* Стеклянная шапка сайта */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-left: 20px;
-    border: 1px solid transparent;
-    padding: 5px 10px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-/* Контент */
-.container {
-    padding: 50px 10%;
-}
-
-h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    border-left: 15px solid #000000;
-    padding-left: 20px;
-}
-
-p {
-    font-size: 1.2rem;
-    max-width: 800px;
-}
-
-/* Кнопки */
-.btn {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #000000;
-}
-
-/* Футер */
-footer {
-    border-top: 2px solid #000000;
-    margin-top: 50px;
     padding: 20px 10%;
-    font-size: 0.9rem;
+    background: rgba(11, 12, 16, 0.8);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #66fcf1;
+    text-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+}
+
+.nav-links a {
+    color: #c5c6c7;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #66fcf1;
+    text-shadow: 0 0 10px #66fcf1;
+}
+
+/* Главный экран */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background: radial-gradient(circle at center, #1f2833 0%, #0b0c10 100%);
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    background: linear-gradient(90deg, #ffffff, #66fcf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #c5c6c7;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Неоновая кнопка */
+.glow-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    background: transparent;
+    border: 2px solid #66fcf1;
+    color: #66fcf1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.glow-btn:hover {
+    background: #66fcf1;
+    color: #0b0c10;
+    box-shadow: 0 0 25px rgba(102, 252, 241, 0.6);
+    transform: translateY(-3px);
 }
