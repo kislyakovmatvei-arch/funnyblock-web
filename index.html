@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Демонстрация QR-кода</title>
+    <title>Информационная страница</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card-container">
-        <h1 class="title">Сканируйте QR-код</h1>
-        <p class="description">Используйте камеру вашего устройства для сканирования кода ниже.</p>
-        
-        <div class="qr-wrapper">
-            <!-- Замените placeholder-картинку на ваш настоящий QR-код -->
-            <img id="qr-image" src="https://qrserver.com" alt="QR Code">
+    <main class="info-container">
+        <div class="qr-block">
+            <!-- Замените путь на ваше изображение кода -->
+            <img src="https://qrserver.com" alt="QR-код" class="qr-code">
         </div>
-
-        <button id="action-btn" class="btn">Обновить код</button>
-    </div>
-
-    <script src="script.js"></script>
+        <div class="text-block">
+            <h1>Для ознакомления</h1>
+            <p>отсканируйте QR-код в мобильном приложении или штатной камерой телефона</p>
+        </div>
+    </main>
 </body>
 </html>
