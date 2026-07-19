@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const randomValue = Math.floor(Math.random() * 1000);
         qrImage.src = `https://qrserver.com{randomValue}`;
         
-        console.log('QR-код был обновлен с новым значением.');
+        console.log("Сайт успешно загружен");
+
     });
 });
